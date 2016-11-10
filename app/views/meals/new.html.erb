@@ -1,0 +1,24 @@
+<div class="container">
+  <%= form_for @meal do |f| %>
+    <div class="from-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="from-group">
+      <%= f.label :price %>
+      <%= f.number_field :price, class: "form-control" %>
+    </div>
+    <div class="from-group">
+      <%= f.label :restaurant %>
+      <%= f.text_field :restaurant, class: 'form-control' %>
+    </div>
+    <div class="from-group">
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control' %>
+    </div>
+
+      <%= f.submit "Crea", class: "btn btn-primary" , style: "margin-top:20px;"%>
+
+  <% end %>
+
+</div>
